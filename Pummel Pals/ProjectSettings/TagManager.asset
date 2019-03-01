@@ -3,7 +3,23 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - platform
+  - tPlatform
+  - mPlatform
+  - bPlatform
+  - turn
+  - enemy
+  - fPlatform
+  - spikes
+  - dPlatform
+  - checkpoint
+  - a
+  - b
+  - c
+  - d
+  - coin
+  - lPlatform
   layers:
   - Default
   - TransparentFX
@@ -14,13 +30,13 @@ TagManager:
   - 
   - 
   - Ground
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Enemies
+  - Destroyables
+  - Player
+  - Special
+  - Background
+  - Foreground
+  - Boat
   - 
   - 
   - 
