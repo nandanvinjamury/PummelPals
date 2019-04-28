@@ -1,0 +1,26 @@
+fileFormatVersion: 2
+guid: 926c8a278c1b66341a332688aec9ec63
+timeCreated: 1553886832
+licenseType: Free
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Blogger Sans
+  fontNames:
+  - Blogger Sans
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 718ca3f64310e744cbb307bbd26a881d, type: 3}
+  - {fileID: 12800000, guid: 735edde8e01dfb54e901b58571a581c9, type: 3}
+  - {fileID: 12800000, guid: 4e6399efbeac90241b1b1d7522cd6bdf, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

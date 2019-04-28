@@ -6,7 +6,7 @@ public class LevelHandler : MonoBehaviour {
 
 	private GameManager gm;
 	public Vector3 checkpointPos;
-	[SerializeField] private GameObject coin;
+	public GameObject coin;
 	public static bool coin1, coin2, coin3;
 	public Vector3 coin1pos, coin2pos, coin3pos;
 	public static int score;
@@ -15,9 +15,15 @@ public class LevelHandler : MonoBehaviour {
 
 
 	public void Awake() {
-
 		gm = GameObject.FindObjectOfType<GameManager>();
-	}
+        if (pauseMenu != null)
+        {
+            pauseMenu.SetActive(false);
+        }
+        coin1 = true;
+        coin2 = true;
+        coin3 = true;
+    }
 
 	
 

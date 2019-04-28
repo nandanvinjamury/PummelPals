@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour {
 	public Vector3 coin1pos, coin2pos, coin3pos;
 	public static int score;
 	public GameObject pauseMenu;
+    public LevelHandler lh;
 
 	// Use this for initialization
 	void Awake () {
@@ -27,38 +28,44 @@ public class GameManager : MonoBehaviour {
 			pauseMenu.SetActive(false);
 		}
 
-		if (coin1) {
-			Instantiate(coin, coin1pos, Quaternion.identity);
+        lh = GameObject.FindObjectOfType<LevelHandler>();
+
+        coin1 = LevelHandler.coin1;
+        coin2 = LevelHandler.coin2;
+        coin3 = LevelHandler.coin3;
+        coin1pos = lh.coin1pos;
+        coin2pos = lh.coin2pos;
+        coin3pos = lh.coin3pos;
+
+		if (LevelHandler.coin1) {
+			Instantiate(coin, lh.coin1pos, Quaternion.identity);
 		}
-		if (coin2) {
-			Instantiate(coin, coin2pos, Quaternion.identity);
+		if (LevelHandler.coin2) {
+			Instantiate(coin, lh.coin2pos, Quaternion.identity);
 		}
-		if (coin3) {
-			Instantiate(coin, coin3pos, Quaternion.identity);
+		if (LevelHandler.coin3) {
+			Instantiate(coin, lh.coin3pos, Quaternion.identity);
 		}
 	}
 
 	private void Start() {
 
-		if (pauseMenu != null) {
-			pauseMenu.SetActive(false);
-		}
-		coin1 = true;
-		coin2 = true;
-		coin3 = true;
 		Debug.Log("coin1: " + coin1);
 		Debug.Log("coin2: " + coin2);
 		Debug.Log("coin3: " + coin3);
-		if (coin1) {
-			Instantiate(coin, coin1pos, Quaternion.identity);
-		}
-		if (coin2) {
-			Instantiate(coin, coin2pos, Quaternion.identity);
-		}
-		if (coin3) {
-			Instantiate(coin, coin3pos, Quaternion.identity);
-		}
-	}
+        if (LevelHandler.coin1)
+        {
+            Instantiate(lh.coin, lh.coin1pos, Quaternion.identity);
+        }
+        if (LevelHandler.coin2)
+        {
+            Instantiate(lh.coin, lh.coin2pos, Quaternion.identity);
+        }
+        if (LevelHandler.coin3)
+        {
+            Instantiate(lh.coin, lh.coin3pos, Quaternion.identity);
+        }
+    }
 
 	// Update is called once per frame
 	void Update () {
