@@ -1,2 +1,2 @@
 # PummelPals
-A 2d puzzle platformer with fun skills and kid fascinations
+A 2d beat-em-up puzzle platformer with children aiming to defeat their worst fears
